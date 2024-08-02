@@ -59,4 +59,11 @@ h2 {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #0af;
+    text-decoration: none;
+}
