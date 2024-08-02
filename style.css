@@ -4,18 +4,24 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    transition: background-color 0.5s ease-in-out;
 }
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+    background-color: #45a049;
 }
 
 nav ul {
     list-style: none;
-    background-color: #444;
+    background-color: #333;
     padding: 0;
     text-align: center;
 }
@@ -29,12 +35,19 @@ nav ul li a {
     color: white;
     padding: 1em;
     display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: #fff;
 }
 
 section {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
+    animation: fadeIn 2s;
 }
 
 h2 {
@@ -58,12 +71,31 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0;
     background-color: #333;
     color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+footer:hover {
+    background-color: #444;
 }
 
 footer a {
     color: #0af;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0bf;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
